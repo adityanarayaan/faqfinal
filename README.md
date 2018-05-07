@@ -79,3 +79,32 @@ http://agiledata.org/essays/tdd.html
 
 ## Free Alternative:
 https://code.visualstudio.com/
+
+##Epic and User Stories.
+
+##Epic-01 Provide access control to three different actors- 1.Admin 2.Teacher 3.Student.
+
+User Story 01- As a Student I would be able to do all the functions a student can do on the student page.
+
+User Story 02- As a Teacher I would be able to do the functions a teacher can do like posting of questions. Teacher can access only the teacher page.
+
+User Story 03- As a Admin I would be able to all the functions the admin can do. The admin will be able to access the admin page.
+
+## User Stories
+1. As a student, I would be able to view the questions posted by the teacher, so that I would be able to answer them.
+
+2. As a student, I don't want to view the teachers page, so that I can not see the work done by the teachers.
+
+3. As a student, I don't want to view the admins page, so that I can not perform the functions of an admin. 
+
+4. As a teacher, I would be able to post and edit questions, so that student could answer them.
+
+5. As a teacher,  I don't want to view the students page, so that I can not see the work done by the student.
+
+6. As a teacher,  I don't want to view the admins page, so that I can not perform the functions of an admin. 
+
+7. As an admin, I would be able to go toadmin home page, so that I can perform admin related functions.
+
+8. As an admin,  I don't want to view the teachers page, so that I can not see the work done by the teachers.
+
+9. As an admin,  I don't want to view the student page, so that I can not perform the functions of the student. 

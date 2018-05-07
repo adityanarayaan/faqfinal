@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Profile;
 
 class profileTest extends TestCase
 {
@@ -13,13 +14,27 @@ class profileTest extends TestCase
      *
      * @return void
      */
-    public function testSave()
+    public function testDeleteProfile()
     {
+        $profile = new Profile();
+        //$user->name = 'Mrs. Emilia Rose';
+        $profile->user_id = '27';
+        $profile->fname = 'Robert';
+        $profile->lname = 'Jones';
+        $profile->body = 'Grant Avenue';
+        $profile->save();
+        $this->assertTrue($profile->delete());
+    }
 
-        $user = factory(\App\User::class)->make();
-        $user->save();
-        $profile = factory(\App\Profile::class)->make();
-        $profile->user()->associate($user);
+    public function testInsertProfile()
+    {
+        $profile = new Profile();
+        //$user->name = 'Mrs. Emilia Rose';
+        $profile->user_id = '27';
+        $profile->fname = 'James';
+        $profile->lname = 'Patrick';
+        $profile->body = 'Living in Journal Square';
+        $profile->save();
         $this->assertTrue($profile->save());
     }
 }

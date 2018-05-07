@@ -4,7 +4,15 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
+                <div class=”panel-body”>
+                    You are logged in! as <strong>{{ strtoupper(Auth::user()->role) }}</strong><br>
+                    Admin Page: <a href="{{ url('/') }}/adminOnlyPage">{{ url('/') }}/adminOnlyPage</a><br>
+                    Teacher Page: <a href="{{ url('/') }}/teacherOnlyPage">{{ url('/') }}/teacherOnlyPage</a><br>
+                    Student Page: <a href="{{ url('/') }}/studentOnlyPage">{{ url('/') }}/studentOnlyPage</a><br>
+
+                </div>
                 <div class="card">
+
                     <div class="card-header">Questions
                         <a class="btn btn-primary float-right" href="{{ route('questions.create') }}">
                             Create a Question

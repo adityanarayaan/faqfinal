@@ -16,6 +16,21 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
+{
+    Route::match(['get', 'post'], '/adminOnlyPage/', 'HomeController@admin');
+});
+
+Route::group(['middleware' => 'App\Http\Middleware\TeacherMiddleware'], function()
+{
+    Route::match(['get', 'post'], '/teacherOnlyPage/', 'HomeController@teacher');
+});
+
+
+Route::group(['middleware' => 'App\Http\Middleware\StudentMiddleware'], function()
+{
+    Route::match(['get', 'post'], '/studentOnlyPage/', 'HomeController@student');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/adminhome', 'AdminController@index')->name('adminhome');

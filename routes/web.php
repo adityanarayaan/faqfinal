@@ -26,7 +26,6 @@ Route::group(['middleware' => 'App\Http\Middleware\TeacherMiddleware'], function
     Route::match(['get', 'post'], '/teacherOnlyPage/', 'HomeController@teacher');
 });
 
-
 Route::group(['middleware' => 'App\Http\Middleware\StudentMiddleware'], function()
 {
     Route::match(['get', 'post'], '/studentOnlyPage/', 'HomeController@student');

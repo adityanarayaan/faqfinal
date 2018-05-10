@@ -79,3 +79,9 @@ http://agiledata.org/essays/tdd.html
 
 ## Free Alternative:
 https://code.visualstudio.com/
+
+## References
+1. https://laravel.com/docs/5.6/authorization
+2. https://medium.com/justlaravel/how-to-use-middleware-for-content-restriction-based-on-user-role-in-laravel-2d0d8f8e94c6
+3. https://semaphoreci.com/community/tutorials/testing-middleware-in-laravel-with-phpunit
+

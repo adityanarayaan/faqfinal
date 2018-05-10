@@ -53,7 +53,7 @@ class UserTest extends TestCase
 
         $user->email = 'Adele@gmail.com';
         $user->password = 'theflash';
-        $user->role = 'tutor';
+        $user->role = 'teacher';
         $this->assertTrue($user->save());
     }
 }

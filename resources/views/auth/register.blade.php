@@ -46,13 +46,13 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
-                        <div class=”form-group”>
-                            <label for=”role” class=”col-md-6 control-label” >User Type:</label>
-                            <div class=”col-md-6">
-                                <select class=”form-control” name=”role” id=”role”>
-                                    <option value=”admin”>Admin</option>
-                                    <option value=”teacher”>Teacher</option>
-                                    <option value=”student”>Student</option>
+                        <div class="form-group">
+                            <label for="role" class="col-md-6 control-label" >User Type:</label>
+                            <div class="col-md-6">
+                                <select class="form-control" name="role" id="role">
+                                    <option value="admin">Admin</option>
+                                    <option value="teacher">Teacher</option>
+                                    <option value="student">Student</option>
                                 </select>
                             </div></div>
                         <div class="form-group row mb-0">
